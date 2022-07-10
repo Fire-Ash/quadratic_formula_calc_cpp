@@ -8,3 +8,5 @@ include_directories(src)
 add_executable(qf-calc
         src/header.h
         src/main.cpp)
+
+install(TARGETS qf-calc DESTINATION bin)

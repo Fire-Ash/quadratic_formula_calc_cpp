@@ -20,3 +20,5 @@ cmake ..
 make
 ./qf-calc
 </code></pre>
+
+<p>I'm not sure how to build for Windows, so if anyone can update this file with build instructions for Windows, that would be nice.</p>

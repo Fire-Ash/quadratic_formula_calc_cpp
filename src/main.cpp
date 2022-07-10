@@ -5,9 +5,6 @@ int main()
     double a, b, c;
     double x1, x2;
 
-//    clrscr();
-//    gotoxy(0, 0);
-
     std::cout << "    Quadratic Formula Calculator    \n";
     std::cout << "------------------------------------\n";
 
