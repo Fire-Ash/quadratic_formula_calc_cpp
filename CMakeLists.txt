@@ -5,6 +5,6 @@ set(CMAKE_CXX_STANDARD 14)
 
 include_directories(src)
 
-add_executable(quadratic_formula_calc_cpp
+add_executable(qf-calc
         src/header.h
         src/main.cpp)
