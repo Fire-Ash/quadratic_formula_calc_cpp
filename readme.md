@@ -9,6 +9,9 @@
 <h3>installing on Arch Linux</h3>
 <pre><code>sudo pacman -S git cmake make gcc</code></pre>
 
+<h3>installing on Windows</h3>
+<p>idk lol just don't use windows</p>
+
 <h3>installing on other distros/operating systems</h3>
 the install process would be basically the same ig but with whatever package manager you use
 
@@ -20,5 +23,3 @@ cmake ..
 make
 ./qf-calc
 </code></pre>
-
-<p>I'm not sure how to build for Windows, so if anyone can update this file with build instructions for Windows, that would be nice.</p>
