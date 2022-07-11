@@ -1,10 +1,10 @@
 #include "header.h"
 
-int main()
+int main(int argc, char *argv[])
 {
     double a, b, c;
-    double x1, x2;
 
+    if(argc == 1) {                                                  // no extra args
     std::cout << "    Quadratic Formula Calculator    \n";
     std::cout << "------------------------------------\n";
 
@@ -14,6 +14,17 @@ int main()
     std::cin >> b;
     std::cout << "input the value for c:\n";
     std::cin >> c;
+    std::cout << "\n\n";
+    } else if(argc > 1 && argc < 4) {                                // not enough args
+        std::cout << "not enough arguments were provided.\n";
+        std::cout << "argument 1: value for a\nargument 2: value for b\nargument 3: value for c\n";
+
+        return 1;
+    } else if(argc == 4) {
+        a = atof(argv[1]);
+        b = atof(argv[2]);
+        c = atof(argv[3]);
+    }
 
     double sqp1 = pow(b, 2);
     double sqp2 = 4 * a * c;
@@ -23,10 +34,16 @@ int main()
     double x1p1 = -b + sq;
     double x2p1 = -b - sq;
 
-    x1 = x1p1 / p2;
-    x2 = x2p1 / p2;
+    double x1   = x1p1 / p2;
+    double x2   = x2p1 / p2;
 
-    std::cout << "\n\nx1 = " << x1 << "\nx2 = " << x2 << "\n\n";
+    std::cout << "x1 = " << x1 << "\nx2 = " << x2 << "\n";
+
+    if(argc == 1) {
+        std::cout << "\nPress Enter to continue.";
+        std::cin.ignore();
+        std::cin.get();
+    }
 
     return 0;
 }
